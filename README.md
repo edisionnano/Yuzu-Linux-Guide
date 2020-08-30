@@ -30,9 +30,9 @@ Just run it by double clicking it, that's it, no dependencies.<br/>
 Binaries are also available and just like the official Yuzu mainline binaries they still need dependencies, they are also built without qtwebengine since the Appimages derive from these binaries.
 ## Gathering the stuff you need
 In order to use yuzu you'll need the bellow things:
-- [prod.keys](https://raw.githubusercontent.com/emuworld/aio/master/prod.keys) - Since yuzu doesn't support decrypted rom formats you'll need these to decrypt your games
-- Firmware (optional) - This includes shared fonts, Miis and some other misc stuff (aHR0cHM6Ly9kYXJ0aHN0ZXJuaWUubmV0L3N3aXRjaC1maXJtd2FyZXMv)
+- [prod.keys](https://raw.githubusercontent.com/emuworld/aio/master/prod.keys) - Since yuzu doesn't support decrypted rom formats you'll need these to decrypt your games.
+- Firmware (optional) - This includes shared fonts, Miis and some other misc stuff (aHR0cHM6Ly9kYXJ0aHN0ZXJuaWUubmV0L3N3aXRjaC1maXJtd2FyZXMv).
 - Base ROM (NSP or XCI) - These are the only formats supported by Yuzu, NSPs derive from the Nintendo webstore while XCIs are cartridge dump, NSPs are smaller so grab these since they don't include firmware and other stuff.
-- Update - Updates fix games in many ways, most of the times you want the latest version but some other times it may not be compatible with Yuzu or the mods you are using yet
+- Update - Updates fix games in many ways, most of the times you want the latest version but some other times it may not be compatible with Yuzu or the mods you are using yet.
 - DLC - Downloadable content expands the games so you do want those.
 - [Mods](https://github.com/yuzu-emu/yuzu/wiki/Switch-Mods) - Mods fix games or enhance them in many ways, take a look if the games you wanna play are on the list and grab the ones you want.

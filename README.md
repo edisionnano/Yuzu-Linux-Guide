@@ -36,5 +36,13 @@ In order to use yuzu you'll need the bellow things:
 - Update - Updates fix games in many ways, most of the times you want the latest version but some other times it may not be compatible with Yuzu or the mods you are using yet.
 - DLC - Downloadable content expands the games so you do want those.
 - [Mods](https://github.com/yuzu-emu/yuzu/wiki/Switch-Mods) - Mods fix games or enhance them in many ways, take a look if the games you wanna play are on the list and grab the ones you want.
-## Getting Started
+TIP:Do not download shader caches for yuzu, they get invalidated, it's recommended that you build your own shader cache.
+## Getting Started and Configuration
 Create a folder on your home folder called ```.switch``` and drop prod.keys inside (if you can't see hidden folders press Ctrl+H), these keys will be used by Ryujinx too.<br/>
+After that you open Yuzu and navigate to ```Install Files to NAND...``` in the File menu, from here you can mass install all your updates, DLC and even games (although it is recommended you don't install games).<br/>
+We can now start configuring the emulator, go to Emulation > Configure.<br/>
+Most options in the General section are upto personal preference but it is recommended that you do not enable Discord Presence since you may be noticed by Yuzu stuff using an EA build.<br/>
+In the System section, in the System tab you want to use your corresponding time zone since this is used by games like Animal Crossing:New Horizons for the ingame day-night cycle. In the profiles tab create a new profile called whatever you want and delete the default yuzu profile, this may fix crashes in games like Super Smash Bros Ultimate. In the Services tab you change BCAT Backend from none to Boxcat in order to get events in games, if you ever get any issues try disabling it again.<br/>
+In the Graphics section and Graphics tab you can choose your Graphics Api, it is recommended that you use OpenGL since it works fine in linux and Vulkan has memory leaks. In the Advanced tab you can disable assembly shaders if you don't have nvidia or you have any problems with newer drivers(like flashing picture in Super Mario Odyssey).<br/>
+And last but not least in the Controls section you can configure your controller, it is recommended that you use Pro Controller for docked and Joy cons for handheld. Don't forget to save your profile once you are done.<br/>
+Yuzu takes a painstackingly long time to search subfolders for ROMs so it is recommended that you create a folder and drop all the base games in the root of this folder.

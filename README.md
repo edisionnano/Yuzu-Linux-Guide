@@ -37,4 +37,4 @@ In order to use yuzu you'll need the bellow things:
 - DLC - Downloadable content expands the games so you do want those.
 - [Mods](https://github.com/yuzu-emu/yuzu/wiki/Switch-Mods) - Mods fix games or enhance them in many ways, take a look if the games you wanna play are on the list and grab the ones you want.
 ## Getting Started
-Create a folder on your home folder called ```.switch``` and drop prod.keys inside (if you can't see hidden folders press Ctrl+H), these keys will be use by Ryujinx too.<br/>
+Create a folder on your home folder called ```.switch``` and drop prod.keys inside (if you can't see hidden folders press Ctrl+H), these keys will be used by Ryujinx too.<br/>

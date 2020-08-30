@@ -6,11 +6,11 @@ There are 2 ways to use Yuzu EA on linux, either using the pineapple script or t
 ## Using pinEApple
 If you are going to go the appimage route skip this step.<br/>
 In order to use pineapple you must first install the dependencies.<br/>
-The depedencies can be found [here](https://github.com/pineappleEA/Pineapple-Linux).<br/>
+The depedencies can be found [here](https://github.com/pineappleEA/Pineapple-Linux#dependencies).<br/>
 TIP:Install aria2 for faster download times.<br/>
 After you install the dependencies it's highly recommend that you'd add the pineapple script as a command. Like the readme mentions all you have to do is append ```alias pineapple="curl https://raw.githubusercontent.com/pineappleEA/Pineapple-Linux/master/pineapple.sh | sh -s --"``` at the end of your shell configuration file (.zshrc or .bashrc on ~ depending on the shell you use), then you can call it using the command ```pineapple```.<br/>
 We can now either call pineapple using it's command (after we restart our terminal emulator) or using ``curl https://raw.githubusercontent.com/pineappleEA/Pineapple-Linux/master/pineapple.sh | sh  -s --``.<br/>
-![Initial screen](https://i.ibb.co/r0vh4ZL/guide1.png)<br/>
+![Initial screen](https://i.ibb.co/MVYPF5f/guide1.png)<br/>
 Once you do that you will be greeted with some self explanatory options. We want to download yuzu so we'll just type ```1``` and hit enter.<br/>
 The programm will start downloading, extracting and compiling Yuzu. If you have an nvidia GPU the magic number screen will show up.<br/>
 ![Magic Number screen](https://i.ibb.co/Yj3SYWr/guide2.png)<br/>
@@ -29,4 +29,10 @@ pinEApple now distributes Appimages too thanks to qurious. In order to use them 
 Just run it by double clicking it, that's it, no dependencies.<br/>
 Binaries are also available and just like the official Yuzu mainline binaries they still need dependencies, they are also built without qtwebengine since the Appimages derive from these binaries.
 ## Gathering the stuff you need
-In order to use yuzu
+In order to use yuzu you'll need the bellow things:
+- [prod.keys](https://raw.githubusercontent.com/emuworld/aio/master/prod.keys) - Since yuzu doesn't support decrypted rom formats you'll need these to decrypt your games
+- Firmware (optional) - This includes shared fonts, Miis and some other misc stuff (aHR0cHM6Ly9kYXJ0aHN0ZXJuaWUubmV0L3N3aXRjaC1maXJtd2FyZXMv)
+- Base ROM (NSP or XCI) - These are the only formats supported by Yuzu, NSPs derive from the Nintendo webstore while XCIs are cartridge dump, NSPs are smaller so grab these since they don't include firmware and other stuff.
+- Update - Updates fix games in many ways, most of the times you want the latest version but some other times it may not be compatible with Yuzu or the mods you are using yet
+- DLC - Downloadable content expands the games so you do want those.
+- [Mods](https://github.com/yuzu-emu/yuzu/wiki/Switch-Mods) - Mods fix games or enhance them in many ways, take a look if the games you wanna play are on the list and grab the ones you want.

@@ -1,9 +1,9 @@
 # Yuzu Linux Guide
 ## Prologue
 Setting up yuzu can be a bit finicky, especially EA on Linux, but this guide aims to simplify the proccess through some small steps.
-## Choosing the right methon
+## Choosing the right method
 There are 2 ways to use Yuzu EA on linux, either using the pineapple script or the pineapple appimages. For big distributions which are either based on debian(like ubuntu), arch, RHEL (like fedora) and gentoo using the script is the optimal solution. The pineapple binaries are made as a portable means of using yuzu mostly for people who want to run Yuzu on amd hardware using a pendrive without installing linux or for people with obscure unsupported distributions like intel's Clear Linux to name one. The appimages include an updater but fall a bit short since they lack qtwebengine, some assets and more stuff to cut down on size due to the nature of appimages.
-## Using PinEApple
+## Using pinEApple
 If you are going to go the appimage route skip this step.<br/>
 In order to use pineapple you must first install the dependencies.<br/>
 The depedencies can be found [here](https://github.com/pineappleEA/Pineapple-Linux).<br/>
@@ -12,6 +12,21 @@ After you install the dependencies it's highly recommend that you'd add the pine
 We can now either call pineapple using it's command (after we restart our terminal emulator) or using ``curl https://raw.githubusercontent.com/pineappleEA/Pineapple-Linux/master/pineapple.sh | sh  -s --``.<br/>
 ![Initial screen](https://i.ibb.co/r0vh4ZL/guide1.png)<br/>
 Once you do that you will be greeted with some self explanatory options. We want to download yuzu so we'll just type ```1``` and hit enter.<br/>
-
+The programm will start downloading, extracting and compiling Yuzu. If you have an nvidia GPU the magic number screen will show up.<br/>
+![Magic Number screen](https://i.ibb.co/Yj3SYWr/guide2.png)<br/>
+This is a simple fix for vulkan outright crashing on nvidia GPUs when starting a game, you can use many different values to find what works best for your hardware.<br/>
+TIP:If you want to force the Magic number screen to show up use the ```-n``` flag at the end of the command you use to run pineapple.<br/>
+The compilation should be pretty fast but if you aren't satisfied with it you can speed up the proccess upto 10 times by using ccache. To do this install the ccache package of your distribution and either append ```export PATH="/usr/lib/ccache/bin/:$PATH"``` at the end of your shell configuration file to use it globally or run this command everytime before running pineapple to use it only with pineapple.<br/>
+When the compilation finishes you will be asked whether you want to install yuzu or not, it is recommended that you do so by typing ```y``` and pressing enter. You will be asked for your password (in linux when typing your password you won't see ****** or any other visual hint) and then you should be notified that the compilation proccess finished successfully.<br/>
+You can now either run it using the command ```yuzu``` or from your app launcher.<br/>
+![The launcher](https://i.ibb.co/qWZgMP9/launcher.png)<br/>
+You can also choose not to install Yuzu by typing ```n``` and hitting enter.<br/>
+If you do so, you will find the yuzu binary in a folder called earlyaccess on your home foler (~).<br/>
+From there you can just execute it like a common Yuzu mainline linux binary (either click it or run it using ./yuzu from a terminal emulator).
+## Using Appimages
+WARNING:Appimages are still experimental.
+pinEApple now distributes Appimages too thanks to qurious. In order to use them just grab one from [here](https://github.com/pineappleEA/pineappleEA.github.io/releases) (it's the one named ```yuzu-x86_64.AppImage```).<br/>
+Just run it by double clicking it, that's it, no dependencies.<br/>
+Binaries are also available and just like the official Yuzu mainline binaries they still need dependencies, they are also built without qtwebengine since the Appimages derive from these binaries.
 ## Gathering the stuff you need
 In order to use yuzu

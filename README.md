@@ -21,7 +21,7 @@ When the compilation finishes you will be asked whether you want to install yuzu
 You can now either run it using the command ```yuzu``` or from your app launcher.<br/>
 ![The launcher](https://i.ibb.co/qWZgMP9/launcher.png)<br/>
 You can also choose not to install Yuzu by typing ```n``` and hitting enter.<br/>
-If you do so, you will find the yuzu binary in a folder called earlyaccess on your home foler (~).<br/>
+If you do so, you will find the yuzu binary in a folder called earlyaccess on your home folder (~).<br/>
 From there you can just execute it like a common Yuzu mainline linux binary (either click it or run it using ./yuzu from a terminal emulator).
 ## Using Appimages
 WARNING:Appimages are still experimental.
